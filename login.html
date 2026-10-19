@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | DreamHomes</title>
+  <link rel="icon" href="assets/dreamhomes-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <div class="login-background"><span></span><span></span><span></span></div>
+  <header class="login-nav container">
+    <a class="brand" href="index.html"><img src="assets/dreamhomes-icon.svg" alt=""><span>Dream<span>Homes</span></span></a>
+    <a href="index.html" class="back-link">← Back to website</a>
+  </header>
+
+  <main class="login-wrap">
+    <div class="login-card">
+      <div class="login-side">
+        <span class="section-kicker">WELCOME BACK</span>
+        <h1>Make yourself at home.</h1>
+        <p>Sign in to save properties, manage your listings and continue your home search.</p>
+        <div class="login-mini"><span>⌂</span><div><strong>12,000+</strong><small>properties waiting for you</small></div></div>
+      </div>
+      <div class="login-form-area">
+        <h2>Sign in</h2>
+        <p class="muted">Enter your details to continue.</p>
+        <form id="loginForm">
+          <label>Email address</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+          <label>Password</label>
+          <div class="password-box"><input id="password" type="password" placeholder="••••••••" minlength="6" required><button type="button" id="togglePassword">Show</button></div>
+          <div class="form-row"><label class="remember"><input type="checkbox"> Remember me</label><a href="#" id="forgotLink">Forgot password?</a></div>
+          <button class="primary-btn full" type="submit">Sign in <span>→</span></button>
+        </form>
+        <div class="divider"><span>or</span></div>
+        <button class="social-login" id="demoLogin">Continue with demo account</button>
+        <p class="signup">New to DreamHomes? <a href="#" id="signupLink">Create an account</a></p>
+        <p class="demo-note">Demo page for your internship project — no real account is created.</p>
+      </div>
+    </div>
+  </main>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

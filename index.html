@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DreamHomes — modern real estate property discovery website.">
+  <title>DreamHomes | Find Your Dream Home</title>
+  <link rel="icon" href="assets/dreamhomes-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="preloader" class="preloader">
+    <div class="loader-mark"><span></span><span></span><span></span></div>
+    <p>Preparing your dream home<span class="dots">...</span></p>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container">
+      <a class="brand" href="#home" aria-label="DreamHomes home">
+        <img src="assets/dreamhomes-icon.svg" alt="">
+        <span>Dream<span>Homes</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="properties.html">Properties</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="login-btn" href="login.html">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-shape shape-one"></div>
+      <div class="hero-shape shape-two"></div>
+      <div class="hero-content container">
+        <div class="eyebrow reveal">YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1 class="reveal delay-1">Find a place<br><em>you'll love</em> to live.</h1>
+        <p class="hero-copy reveal delay-2">Discover thoughtfully selected homes, apartments and villas in locations that fit the way you want to live.</p>
+
+        <div class="search-panel reveal delay-3">
+          <div class="search-field">
+            <label for="location">Location</label>
+            <input id="location" type="text" placeholder="City or neighborhood">
+          </div>
+          <div class="search-field">
+            <label for="type">Property Type</label>
+            <select id="type">
+              <option value="all">Any property</option>
+              <option value="house">House</option>
+              <option value="apartment">Apartment</option>
+              <option value="villa">Villa</option>
+              <option value="office">Office</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label for="budget">Budget</label>
+            <select id="budget">
+              <option value="all">Any budget</option>
+              <option value="50">Under ₹50L</option>
+              <option value="100">₹50L – ₹1Cr</option>
+              <option value="200">₹1Cr – ₹2Cr</option>
+              <option value="300">₹2Cr+</option>
+            </select>
+          </div>
+          <button class="primary-btn search-btn" id="searchBtn">Search Homes <span>→</span></button>
+        </div>
+
+        <div class="hero-trust reveal delay-4">
+          <div class="avatars">
+            <span>AK</span><span>RM</span><span>SP</span><span>+</span>
+          </div>
+          <div><strong>12,000+</strong><small>happy home seekers</small></div>
+        </div>
+      </div>
+      <a href="#properties" class="scroll-cue" aria-label="Scroll to properties"><span></span> Scroll to explore</a>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div class="stat"><strong data-count="12000">0</strong><span>Homes listed</span></div>
+        <div class="stat"><strong data-count="8500">0</strong><span>Homes sold</span></div>
+        <div class="stat"><strong data-count="150">0</strong><span>Locations</span></div>
+        <div class="stat"><strong data-count="98">0</strong><span>Client satisfaction %</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="properties">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">EXPLORE HOMES</span>
+            <h2>Featured properties</h2>
+          </div>
+          <a href="properties.html" class="text-link">View all properties <span>→</span></a>
+        </div>
+
+        <div class="property-grid" id="propertyGrid">
+          <article class="property-card reveal" data-type="villa" data-location="vizag hyderabad">
+            <div class="property-image image-villa">
+              <span class="tag">Featured</span><button class="heart" aria-label="Save property">♡</button>
+            </div>
+            <div class="property-body">
+              <div class="property-meta"><span>Villa</span><span>•</span><span>4 Beds</span><span>•</span><span>3 Baths</span></div>
+              <h3>Modern Sea View Villa</h3><p>Rushikonda, Visakhapatnam</p>
+              <div class="property-bottom"><strong>₹1.85 Cr</strong><a class="details-btn" href="property-details.html?id=1">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="property-card reveal delay-1" data-type="apartment" data-location="hyderabad vizag">
+            <div class="property-image image-apartment">
+              <span class="tag">Popular</span><button class="heart" aria-label="Save property">♡</button>
+            </div>
+            <div class="property-body">
+              <div class="property-meta"><span>Apartment</span><span>•</span><span>3 Beds</span><span>•</span><span>2 Baths</span></div>
+              <h3>Skyline Luxury Apartment</h3><p>Gachibowli, Hyderabad</p>
+              <div class="property-bottom"><strong>₹92 Lakh</strong><a class="details-btn" href="property-details.html?id=2">View Details</a></div>
+            </div>
+          </article>
+
+          <article class="property-card reveal delay-2" data-type="house" data-location="bangalore chennai">
+            <div class="property-image image-house">
+              <span class="tag">New</span><button class="heart" aria-label="Save property">♡</button>
+            </div>
+            <div class="property-body">
+              <div class="property-meta"><span>House</span><span>•</span><span>3 Beds</span><span>•</span><span>3 Baths</span></div>
+              <h3>Warm Family Residence</h3><p>Whitefield, Bengaluru</p>
+              <div class="property-bottom"><strong>₹1.12 Cr</strong><a class="details-btn" href="property-details.html?id=3">View Details</a></div>
+            </div>
+          </article>
+        </div>
+        <p class="no-results" id="noResults">No matching properties found. Try another location or property type.</p>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="services">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="section-kicker">WHY DREAMHOMES</span>
+          <h2>Everything you need, in one place</h2>
+          <p>From the first search to the final signature, our platform is designed to make property decisions simpler.</p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card reveal"><div class="service-icon">⌂</div><h3>Find your home</h3><p>Search verified properties with smart filters for location, budget and lifestyle.</p><a href="#properties">Explore homes →</a></div>
+          <div class="service-card reveal delay-1"><div class="service-icon">↗</div><h3>Sell with confidence</h3><p>Showcase your property to relevant buyers with a polished digital listing.</p><a href="login.html">List a property →</a></div>
+          <div class="service-card reveal delay-2"><div class="service-icon">◇</div><h3>Expert guidance</h3><p>Get practical support through property discovery, comparison and closing.</p><a href="#contact">Talk to us →</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="split-section section" id="about">
+      <div class="container split-grid">
+        <div class="about-visual reveal">
+          <div class="about-image"></div>
+          <div class="experience-card"><strong>10+</strong><span>years of<br>real estate experience</span></div>
+        </div>
+        <div class="about-copy reveal delay-1">
+          <span class="section-kicker">ABOUT DREAMHOMES</span>
+          <h2>We believe a home is more than four walls.</h2>
+          <p>DreamHomes brings people and properties together through a clean, human-first real estate experience. Our goal is to make searching less stressful and discovering the right space more exciting.</p>
+          <div class="check-list"><span>✓</span> Carefully selected property listings</div>
+          <div class="check-list"><span>✓</span> Clear pricing and useful property details</div>
+          <div class="check-list"><span>✓</span> A simple experience across every device</div>
+          <a class="primary-btn" href="#contact">Meet our team <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section section">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="section-kicker">CLIENT STORIES</span><h2>People finding their place</h2></div></div>
+        <div class="testimonial-card reveal">
+          <div class="quote-mark">“</div>
+          <p id="quoteText">The whole experience felt simple from the first search. I could compare homes quickly and finally found a place that feels like mine.</p>
+          <div class="quote-person"><div class="person-avatar">AS</div><div><strong id="quoteName">Ananya Sharma</strong><small id="quoteRole">Home buyer · Hyderabad</small></div></div>
+          <div class="quote-controls"><button id="prevQuote">←</button><button id="nextQuote">→</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="cta-glow"></div>
+      <div class="container cta-content reveal">
+        <span class="section-kicker">READY WHEN YOU ARE</span>
+        <h2>Your next address could be<br><em>closer than you think.</em></h2>
+        <p>Start exploring properties and make your next move with DreamHomes.</p>
+        <div><a class="primary-btn light" href="#properties">Explore properties <span>→</span></a><a class="outline-btn" href="login.html">Create an account</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#home"><img src="assets/dreamhomes-icon.svg" alt=""><span>Dream<span>Homes</span></span></a><p>Helping you find a place that feels like home.</p></div>
+      <div><h4>Explore</h4><a href="#properties">Properties</a><a href="#services">Services</a><a href="#about">About us</a></div>
+      <div><h4>Company</h4><a href="#contact">Contact</a><a href="login.html">Login</a><a href="#">Privacy</a></div>
+      <div><h4>Get in touch</h4><p>hello@dreamhomes.example</p><p>+91 98765 43210</p><div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a></div></div>
+    </div>
+    <div class="footer-bottom container"><span>© 2026 DreamHomes. Internship project.</span><span>Made with HTML · CSS · JavaScript</span></div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
