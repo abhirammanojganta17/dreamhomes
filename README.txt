@@ -1,13 +1,13 @@
 # DreamHomes Real Estate Website
 
-A polished front-end internship project built with **HTML, CSS and JavaScript**.
+A polished front-end project built with **HTML, CSS and JavaScript**.
 
 ## Files
 - `index.html` — main responsive website
 - `login.html` — animated login page
 - `style.css` — complete styling, responsive layout and animations
 - `script.js` — preloader, scroll reveal, counters, search/filter, favourites, testimonials, mobile menu and demo login
-- `assets/dreamhomes-icon.svg` — custom DreamHomes website icon / favicon
+- `dreamhomes-icon.svg` — custom DreamHomes website icon / favicon
 
 ## Run
 Open `index.html` in a browser. No installation or server is required for the demo.
